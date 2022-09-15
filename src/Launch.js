@@ -8,7 +8,7 @@ function Launch(props) {
   return (
     <Grid container style={{ marginBottom: '32px'}}>
       <Grid item xs={12} sm={2} style={{ textAlign: 'center'}}>
-        <img src={LaunchAvatar} />
+        <img loading='lazy' src={LaunchAvatar} />
       </Grid>
       <Grid item xs={12} sm={10}>
         <Typography>{flight_number}: {mission_name} ({moment(year).format('YYYY')})</Typography>
