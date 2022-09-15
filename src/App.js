@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import {Grid, TextField, Typography} from '@mui/material';
+import Launches from './Launches';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Grid container style={{ width: '65%', margin: '0 auto' }}>
+        <Grid item xs={12} style={{ backgroundColor: 'white', marginTop: '80px', marginBottom: '32px'}}>
+          <TextField label="Enter keywords" variant="outlined" fullWidth />
+        </Grid>
+        <Launches/>
+      </Grid>
     </div>
   );
 }
